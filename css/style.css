@@ -1,10 +1,46 @@
 /* Import */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap')
 /* Genaral Global Setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root{
+    --primary:#ff0066;
+}
+
+body{
+    position: relative;
+    background: #ffffff;
+    font-family:'Roboto',sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
 /*-----------------------------------------------------
 # Header
 -------------------------------------------------------*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 100px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 1s;
+    z-index: 1300;
+}
+
+header.active{
+    background: #ffffff;
+}
 
 /*-----------------------------------------------------
 # Mobile Navigation 

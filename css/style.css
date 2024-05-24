@@ -1,5 +1,5 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
 /* Genaral Global Setting */
 *{
     margin: 0;
@@ -40,6 +40,17 @@ header{
 
 header.active{
     background: #ffffff;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.15);
+
+}
+
+.logo{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 /*-----------------------------------------------------

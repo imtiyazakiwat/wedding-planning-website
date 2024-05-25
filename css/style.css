@@ -223,7 +223,7 @@ header.active{
     height: 35vw;
 }
 
-.circle img{
+.circle img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -232,9 +232,34 @@ header.active{
     object-position: center;
 }
 
-circle.bg img{
+.circle.bg img {
     border-radius: 0;
-    
+}
+
+.circle.large img{
+    transform: scale(2);
+}
+
+.circle.small img{
+    transform: scale(4);
+}
+
+.bg-slide.active .circle.bg{
+    transform: translate(0, 0) rotateZ(-360deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.bg-slide.active .circle.large{
+    transform: translate(0, 0) rotateZ(-720deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.bg-slide.active .circle.small{
+    transform: translate(0, 0) rotateZ(-720deg);
+    opacity: 1;
+    visibility: visible;
 }
 /*-------------------------------------------------------
 #Sections General

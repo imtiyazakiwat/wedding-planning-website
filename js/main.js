@@ -9,3 +9,18 @@ const slideNavigator = name => {
     });
 };
 
+// switch Background 
+window.addEventListener('load',()=>{
+    const slideBtnList = document.querySelectorAll('.slide-btn');
+    slideBtnList.forEach(btn =>{
+        btn.addEventListener('click',function (e){
+            e.preventDefault();
+            slideBtnList.forEach(el =>{
+                el.classList.remove('active');
+            });
+            this.classList.add('active');
+            slideNavigator(this.getAttribute('data-target'));
+        });
+
+    });
+});

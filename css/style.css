@@ -376,11 +376,39 @@ header.active{
 }
 
 .lead svg{
-    
+    font-family:"Dancing Script", cursive;
+    position: absolute;
+    z-index: 1100;
+    fill: currentColor;
+    height: auto;
+    max-width: 20vmin;
+    transform-origin: center;
+    width: 66%;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
 }
 /*-------------------------------------------------------
 #Sections General
 ---------------------------------------------------------*/
+section{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+    bottom: 0;
+    background: #ffffff;
+    transition: ease-in-out 1s;
+    transform-origin: bottom;
+    z-index: 1100;
+}
 
 /*---------------------------------------------------------
 # About Section

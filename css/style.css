@@ -335,7 +335,19 @@ header.active{
     color: #111111;
 }
 
+.share a{
+    text-decoration: none;
+    color: #111111;
+}
 
+.share a ion-icon{
+    font-size: 1.8em;
+}
+
+.lead{
+   position: absolute;
+    
+}
 /*-------------------------------------------------------
 #Sections General
 ---------------------------------------------------------*/

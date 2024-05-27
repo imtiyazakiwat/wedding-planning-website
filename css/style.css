@@ -304,6 +304,38 @@ header.active{
     height: 2px;
     background: #111111;
 }
+
+.share{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1200;
+}
+
+.share::before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    top: -120%;
+    height: 100px;
+    width: 2px;
+    background: #111111;
+}
+
+.share p{
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #111111;
+}
+
+
 /*-------------------------------------------------------
 #Sections General
 ---------------------------------------------------------*/

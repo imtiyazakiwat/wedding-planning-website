@@ -355,10 +355,28 @@ header.active{
    align-items: center;
 }
 
-.move-down{
+.move-down {
     position: absolute;
     z-index: 1100;
     color: #111111;
+    animation: flink 1s linear infinite;
+}
+
+.move-down ion-icon {
+    font-size: 3.5em;
+}
+
+@keyframes flink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.lead svg{
+    
 }
 /*-------------------------------------------------------
 #Sections General

@@ -13,7 +13,7 @@ const slideNavigator = name => {
 window.addEventListener('load',()=>{
     const slideBtnList = document.querySelectorAll('.slide-btn');
     slideBtnList.forEach(btn =>{
-        btn.addEventListener('click',function (e){
+        btn.addEventListener('click',function (e) {
             e.preventDefault();
             slideBtnList.forEach(el =>{
                 el.classList.remove('active');
@@ -30,9 +30,9 @@ const sectionNavigator = name => {
     let sections = document.querySelectorAll('section');
     let header = document.querySelector('header');
     sections.forEach(section => {
-        section.classList.remove('section show');
-        if(section.classList.contains(name)){
-            section.classList.add('section show');
+        section.classList.remove('section-show');
+        if (section.classList.contains(name)){
+            section.classList.add('section-show');
             header.classList.add('active');
         }
 
@@ -42,6 +42,16 @@ const sectionNavigator = name => {
 // navigation to sections
 window.addEventListener('load',()=>{
     const navList=document.querySelectorAll('.nav-btn');
-    navList
+    navList.forEach(nav =>{
+        nav.addEventListener('click',function(e){
+            e.preventDefault();
+            navList.forEach(el =>{
+                el.classList.remove('active');
+            });
+            this.classList.add('active');
+            sectionNavigator(this.getAttribute('data-target'));
+            screen.width < 768 && toggleMenu();
+        });
+    });
 
 });

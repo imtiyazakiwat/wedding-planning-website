@@ -24,3 +24,5 @@ window.addEventListener('load',()=>{
 
     });
 });
+
+// active sections

@@ -442,13 +442,42 @@ section h4{
 }
 
 section p{
-    
+    font-weight: 300;
+    color: #111111;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
 }
 
 /*---------------------------------------------------------
 # About Section
 ----------------------------------------------------------*/
+.about h4::first-letter{
+    color: var(--primary);
+    font-size: 2em;
+}
 
+.about::before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px;
+    height: 100px;
+    width: 2px;
+    background: #111111;
+}
+
+.about .img-box{
+    position: relative;
+}
+
+.about .img-box img{
+    max-width: img-box;
+}
+
+.about .img-box .corner-img{
+    
+}
 /*--------------------------------------------------------
 #Services Section 
 ----------------------------------------------------------*/

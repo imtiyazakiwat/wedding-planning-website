@@ -476,6 +476,13 @@ section p{
 }
 
 .about .img-box .corner-img{
+   position: absolute;
+   width: 15vw;
+   right: 10px;
+   bottom: -50px; 
+}
+
+.section-bg-img{
     
 }
 /*--------------------------------------------------------

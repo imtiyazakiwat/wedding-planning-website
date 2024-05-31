@@ -461,28 +461,37 @@ section p{
     content: '';
     left: 50%;
     transform: translateX(-50%);
-    top: 250px;
+    top: 200px;
     height: 100px;
     width: 2px;
     background: #111111;
 }
+
 
 .about .img-box{
     position: relative;
 }
 
 .about .img-box img{
-    max-width: img-box;
+    max-width: 450px;
 }
 
 .about .img-box .corner-img{
-   position: absolute;
-   width: 15vw;
-   right: 10px;
-   bottom: -50px; 
+    position: absolute;
+    width: 15vw;
+    right: 10px;
+    bottom: -50px;
 }
 
 .section-bg-img{
+    position: absolute;
+    width: 25vw;
+    right: 20px;
+    top: 550px;
+    opacity: 0.2;
+}
+
+.section-btn{
     
 }
 /*--------------------------------------------------------

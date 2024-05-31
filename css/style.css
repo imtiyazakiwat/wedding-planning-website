@@ -461,7 +461,7 @@ section p{
     content: '';
     left: 50%;
     transform: translateX(-50%);
-    top: 200px;
+    top: 250px;
     height: 100px;
     width: 2px;
     background: #111111;
@@ -492,7 +492,33 @@ section p{
 }
 
 .section-btn{
-    
+    position: relative;
+    text-decoration: none;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.section-btn:hover{
+    color: var(--primary);
+}
+
+.section-btn::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -10px;
+    width: 85%;
+    height: 1px;
+    background: #111111;
+    transition: 0.3s;
+}
+
+.section-btn:hover::before{
+    left: 20%;
+    background: var(--primary);
 }
 /*--------------------------------------------------------
 #Services Section 

@@ -587,8 +587,22 @@ section p{
 .card .details::before{
     position: absolute;
     content: '';
-    
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 400px;
+    padding: 20px;
+    background: url('../images/bg-tree.png')no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
 }
+
+.card .details h4::first-letter{
+    color: var(--primary);
+    font-size: 1.1em;
+}
+
 /*--------------------------------------------------------
 #Portfolio Section 
 ----------------------------------------------------------*/

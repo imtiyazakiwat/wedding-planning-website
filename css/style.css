@@ -534,43 +534,61 @@ section p{
     background: #111111;
 }
 
-.card {
-    position: relative;
-    margin: 30px ;
-    width: 300px;
-    height: 300px;
+.card{
+    position: absolute;
+    margin: 50px ;
+    width: 330px;
+    height: 350px;
     background: #ffffff;
     border: none;
     transform-style: preserve-3d;
-    transform: perspective(2000px);
-    transition: transform 1s ease-in-out;
+    transition: ease-in-out 1s;
     border-radius: 0;
-    box-shadow: inset 300px 0 50px rgba(55, 53, 53, 0.25);
+    box-shadow: inset 300px 0 50px rgba(0,0,0, 0.25);
 }
 
-.card:hover .img-box {
-    transform:rotateY(-130deg);
+.card:hover{
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0, 0.25);
+    z-index: 1000;
 }
 
-.card .img-box {
+.card .img-box{
     position: relative;
     border-style: none;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     transform-origin: left;
     z-index: 1;
-    transition: transform 1s;
+    transition: 1s;
+}
+
+.card:hover .img-box{
+    transform: rotateY(-130deg);
 }
 
 .card .img-box img{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 330px;
+    height: 400px;
     object-fit: cover;
 }
 
+.card .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200;
+    padding: 50px 20px 20px;
+}
+
+.card .details::before{
+    position: absolute;
+    content: '';
+    
+}
 /*--------------------------------------------------------
 #Portfolio Section 
 ----------------------------------------------------------*/

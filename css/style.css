@@ -646,6 +646,11 @@ section p{
     opacity: 0;
     transform-origin: center;
 }
+.portfolio #portfolio-filters li:hover:before,
+.portfolio #portfolio-filters li.filter-active::before{
+    opacity: 1;
+    visibility: visible;
+}
 
 /*--------------------------------------------------------
 # Contact

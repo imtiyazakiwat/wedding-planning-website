@@ -622,7 +622,7 @@ section p{
     cursor: pointer;
     display: inline-block;
     margin: 10px 5px;
-    font-weight: 0.85em;
+    font-size: 0.85em;
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
@@ -631,6 +631,22 @@ section p{
     padding: 8px 20px;
     text-align: center;
 }
+
+.portfolio #portfolio-filters li::before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 2px;
+    width: 50%;
+    background: var(--primary);
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: center;
+}
+
 /*--------------------------------------------------------
 # Contact
 ----------------------------------------------------------*/

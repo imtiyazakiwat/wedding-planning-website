@@ -652,6 +652,12 @@ section p{
     visibility: visible;
 }
 
+.portfolio .portfolio-item{
+    margin-bottom: 30px;
+}
+
+
+
 /*--------------------------------------------------------
 # Contact
 ----------------------------------------------------------*/

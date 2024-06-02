@@ -604,10 +604,37 @@ section p{
 }
 
 /*--------------------------------------------------------
-#Portfolio Section 
+# Portfolio Section 
+----------------------------------------------------------*/
+.portfolio h1{
+    margin-bottom: 50px;
+}
+
+.portfolio #portfolio-filters{
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio #portfolio-filters li{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 5px;
+    font-weight: 0.85em;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #111111;
+    transition: 0.3s;
+    padding: 8px 20px;
+    text-align: center;
+}
+/*--------------------------------------------------------
+# Contact
 ----------------------------------------------------------*/
 
 /*--------------------------------------------------------
-#Contact Section 
+# Responsive Design  
 ----------------------------------------------------------*/
-

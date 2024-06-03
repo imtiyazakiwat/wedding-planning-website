@@ -667,14 +667,14 @@ section p{
 
 .portfolio .portfolio-item .portfolio-info{
    position: absolute;
-   /*opacity: 0;*/
+   opacity: 0;
    left: 12px;
    right: 12px;
    bottom: 0;
    z-index: 3;
    transition: all 0.3s;
    background: var(--primary);
-   padding: 10px 10px;
+   padding: 12px 15px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4{
@@ -690,11 +690,33 @@ section p{
     margin-bottom: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link
+.portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link{
-    
+    position: absolute;
+    right: 40px;
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    transition: 0.3s;
 }
 
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover{
+    color: #111111;
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link{
+    right: 10px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-img img{
+   transform: scale(1.15);
+}
+
+.portfolio .portfolio-item:hover .portfolio-info{
+    opacity: 1;
+}
 /*--------------------------------------------------------
 # Contact
 ----------------------------------------------------------*/

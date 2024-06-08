@@ -1,7 +1,6 @@
 /**
  * Eassy selector helper function 
  */
-
 const select = (el, all = false) => {
     el = el.trin();
     if (all) {
@@ -14,7 +13,6 @@ const select = (el, all = false) => {
 /**
  * Eassy event listener function 
  */
-
 const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all);
     if(selectEl) {

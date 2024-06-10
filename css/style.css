@@ -729,12 +729,41 @@ section p{
     background: #ffffff;
 }
 
-.contact .info ino-icon{
+.contact .info ion-icon{
     font-size: 0.6em;
     padding: 8px;
     color: var(--primary);
     float: left;
-    
+    width: 45px;
+    height: 45px;
+    background: #f4e3ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 50%;
+    margin-right: 20px;
+}
+
+.contact .info h4{
+    padding: 0 0 0 60px;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111111;
+}
+
+.contact .info p{
+    padding: 0 0 0 60px;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #111111;
+}
+
+.contact .info .email,
+.contact .info .phone{
+    margin-top: 40px;
 }
 /*--------------------------------------------------------
 # Responsive Design  

@@ -766,7 +766,36 @@ section p{
     margin-top: 40px;
 }
 
+.contact form{
+    width: 100%;
+    background: #ffffff;
+}
 
+.contact form .from-group{
+    padding-bottom: 8px;
+}
+
+.contact form input,
+.contact from textarea {
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none;
+    font-size: 15px;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.contact form input {
+    height: 45px;
+}
+
+.contact form textarea{
+    padding: 10px 12px;
+}
 /*--------------------------------------------------------
 # Responsive Design  
 ----------------------------------------------------------*/

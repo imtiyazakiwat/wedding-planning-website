@@ -723,6 +723,19 @@ section p{
 .contact h1{
     margin-bottom: 50px;
 }
+
+.contact .info{
+    width: 100%;
+    background: #ffffff;
+}
+
+.contact .info ino-icon{
+    font-size: 0.6em;
+    padding: 8px;
+    color: var(--primary);
+    float: left;
+    
+}
 /*--------------------------------------------------------
 # Responsive Design  
 ----------------------------------------------------------*/

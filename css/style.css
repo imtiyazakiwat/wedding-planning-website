@@ -831,4 +831,45 @@ section p{
     .bg-slide .contact{
         width: 80vw;
     }
+
+    .bg-slide .contact h1{
+        font-size: 3em;
+    }
+
+    .bg-slide .contact p{
+        font-size: 0.8em;
+    }
+
+    .circle.bg{
+        width: 140vh;
+        height: 140vh;
+    }
+
+    .circle.large{
+        width: 70vh;
+        height: 70vh;
+    }
+
+    .circle.small{
+        width: 35vh;
+        height: 35vh;
+    }
+
+    .bg-slide.active .circle.bg{
+        transform: translate(0,0)rotateZ(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .bg-slide.active .circle.large{
+        transform: translate(0,0)rotateZ(360deg);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .bg-slide.active .circle.small{
+        transform: translate(0,0)rotateZ(-720deg);
+        opacity: 1;
+        visibility: visible;
+    }
 }

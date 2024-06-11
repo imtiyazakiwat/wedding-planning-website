@@ -910,4 +910,26 @@ section p{
     .share{
         left: 5px;
     }
+
+    section .section-show{
+        padding: 15px 30px 100px;
+    }
+
+    .about .img-box img{
+        max-width: 80vw;
+    }
+
+    .about .img-box .corner-img{
+        width: 25vw;
+        height: -20px;
+    }
+
+    .about h4{
+        margin-top: 50px;
+    }
+
+    .section-bg-img{
+        bottom: -500px;
+        right: 0px;
+    }
 }

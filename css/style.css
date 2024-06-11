@@ -57,7 +57,28 @@ header.active{
     color: #000000;
     font-size: 2em;
     transition: 0.5s;
+}
 
+/* Menu on Mobile */
+
+.menu .open{
+    display: block;
+}
+
+.menu .close{
+    display: none;
+}
+
+.menu.active .open{
+    display: none;
+}
+
+.menu.active .close{
+    display: block;
+}
+
+.menu.active .close{
+    display: block;
 }
 
 .nav{
@@ -871,5 +892,22 @@ section p{
         transform: translate(0,0)rotateZ(-720deg);
         opacity: 1;
         visibility: visible;
+    }
+
+    .load{
+        bottom: 100px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .move-down ion-icon{
+        font-size: 2em;
+    }
+
+    .slide-loader{
+        bottom: 20px;
+    }
+    .share{
+        left: 5px;
     }
 }

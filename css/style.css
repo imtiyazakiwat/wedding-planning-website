@@ -799,9 +799,36 @@ section p{
 
 .contact form button[type='submit']{
     background: var(--primary);
-    border: 0;
-    
+    border: 1px solid var(--primary);
+    padding: 10px 25px;
+    color: #ffffff;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.contact form button[type='submit']:hover{
+    background: #ffffff;
+    color: var(--primary);
 }
 /*--------------------------------------------------------
 # Responsive Design  
 ----------------------------------------------------------*/
+@media (max-width:768px){
+    header{
+        padding: 30px;
+    }
+    .nav{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+
+    .banner{
+        padding: 120px 30px;
+    }
+
+    .bg-slide .contact{
+        width: 80vw;
+    }
+}

@@ -796,6 +796,12 @@ section p{
 .contact form textarea{
     padding: 10px 12px;
 }
+
+.contact form button[type='submit']{
+    background: var(--primary);
+    border: 0;
+    
+}
 /*--------------------------------------------------------
 # Responsive Design  
 ----------------------------------------------------------*/

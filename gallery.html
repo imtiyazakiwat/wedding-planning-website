@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanting Image Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+        :root {
+            --gradient-1: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            --gradient-2: linear-gradient(135deg, #A8EDEA, #FED6E3);
+            --gradient-3: linear-gradient(135deg, #5EE7DF, #B490CA);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: var(--gradient-2);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background 0.5s ease;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        .gallery-item-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-item-info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .gallery-item {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button" aria-label="Back to Home">←</a>
+    <button class="theme-toggle" aria-label="Toggle theme">🎨</button>
+    <div class="container">
+        <h1>Enchanting Image Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Wedding+Ceremony" alt="Wedding ceremony">
+                <div class="gallery-item-info">
+                    <h3>Romantic Wedding Ceremony</h3>
+                    <p>by Emma White</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Corporate+Event" alt="Corporate event">
+                <div class="gallery-item-info">
+                    <h3>Corporate Gathering</h3>
+                    <p>by Michael Brown</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Birthday+Party" alt="Birthday party">
+                <div class="gallery-item-info">
+                    <h3>Colorful Birthday Bash</h3>
+                    <p>by Sophie Green</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Wedding+Reception" alt="Wedding reception">
+                <div class="gallery-item-info">
+                    <h3>Elegant Wedding Reception</h3>
+                    <p>by Oliver Black</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Music+Concert" alt="Music concert">
+                <div class="gallery-item-info">
+                    <h3>Energetic Concert Night</h3>
+                    <p>by Liam Rock</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Graduation+Ceremony" alt="Graduation ceremony">
+                <div class="gallery-item-info">
+                    <h3>Proud Graduation Moment</h3>
+                    <p>by Ava Scholar</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Fashion+Show" alt="Fashion show">
+                <div class="gallery-item-info">
+                    <h3>Glamorous Fashion Event</h3>
+                    <p>by Zoe Styles</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Charity+Gala" alt="Charity gala">
+                <div class="gallery-item-info">
+                    <h3>Elegant Charity Gala</h3>
+                    <p>by Noah Kind</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Product+Launch" alt="Product launch">
+                <div class="gallery-item-info">
+                    <h3>Exciting Product Launch</h3>
+                    <p>by Isla Tech</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://placehold.co/400x300?text=Art+Exhibition" alt="Art exhibition">
+                <div class="gallery-item-info">
+                    <h3>Inspiring Art Exhibition</h3>
+                    <p>by Leo Canvas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        const gradients = [
+            'var(--gradient-1)',
+            'var(--gradient-2)',
+            'var(--gradient-3)'
+        ];
+        let currentGradient = 1;
+
+        themeToggle.addEventListener('click', () => {
+            currentGradient = (currentGradient + 1) % gradients.length;
+            body.style.background = gradients[currentGradient];
+        });
+
+        document.querySelectorAll('.gallery-item').forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.1}s`;
+        });
+    </script>
+</body>
+</html>

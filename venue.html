@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Venues</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .venue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .venue-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .venue-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .venue-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .venue-info {
+            padding: 20px;
+        }
+        .venue-name {
+            font-size: 1.4em;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        .venue-cost, .venue-location {
+            font-size: 1em;
+            color: #666;
+            margin: 5px 0;
+        }
+        .venue-cost {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+        .back-arrow {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button" aria-label="Back to Home">
+            <svg class="back-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+        </a>
+        <h1>Discover Stunning Venues</h1>
+        <div class="venue-grid">
+            <div class="venue-card">
+                <img src="/images/venue/venue1.jpeg" alt="Seaside Resort" class="venue-image">
+                <div class="venue-info">
+                    <h2 class="venue-name">Seaside Resort</h2>
+                    <p class="venue-cost">$500 per night</p>
+                    <p class="venue-location">Malibu, California</p>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="/images/venue/venue2.jpeg" alt="Mountain Lodge" class="venue-image">
+                <div class="venue-info">
+                    <h2 class="venue-name">Mountain Lodge</h2>
+                    <p class="venue-cost">$350 per night</p>
+                    <p class="venue-location">Aspen, Colorado</p>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="/images/venue/venue3.jpeg" alt="Urban Loft" class="venue-image">
+                <div class="venue-info">
+                    <h2 class="venue-name">Urban Loft</h2>
+                    <p class="venue-cost">$250 per night</p>
+                    <p class="venue-location">New York City, New York</p>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="/images/venue/venue4.jpeg" alt="Tropical Villa" class="venue-image">
+                <div class="venue-info">
+                    <h2 class="venue-name">Tropical Villa</h2>
+                    <p class="venue-cost">$600 per night</p>
+                    <p class="venue-location">Bali, Indonesia</p>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="/images/venue/venue5.jpeg" alt="Historic Castle" class="venue-image">
+                <div class="venue-info">
+                    <h2 class="venue-name">Historic Castle</h2>
+                    <p class="venue-cost">$1000 per night</p>
+                    <p class="venue-location">Edinburgh, Scotland</p>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="/images/venue/venue6.jpeg" alt="Desert Oasis" class="venue-image">
+                <div class="venue-info">
+                    <h2 class="venue-name">Desert Oasis</h2>
+                    <p class="venue-cost">$400 per night</p>
+                    <p class="venue-location">Dubai, UAE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

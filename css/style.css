@@ -940,3 +940,51 @@ section p{
         right: 0px;
     }
 }
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.nav-container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.bar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.bar li {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    color: #888;
+    font-weight: bold;
+}
+
+.bar li.active {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    border-radius: 25px;
+}
+
+.bar li a {
+    color: inherit;
+    text-decoration: none;
+}

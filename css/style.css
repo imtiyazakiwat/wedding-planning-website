@@ -8,7 +8,7 @@
 }
 
 :root{
-    --primary:#ff0066;
+    --primary:#fa9bc1;
 }
 
 body{
@@ -31,23 +31,23 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 20px 100px;
-    background: transparent;
+    background: rgb(201, 126, 176);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(247, 135, 196, 0.952);
     transition: 1s;
     z-index: 1300;
 }
 
 header.active{
-    background: #ffffff;
+    background: #f77ec9;
     box-shadow: 0 0 5px rgba(0,0,0, 0.15);
 
 }
 
 .logo{
     font-family: "Dancing Script", cursive;
-    font-size: 40px;
-    color: #000000;
+    font-size: 45px;
+    color: #f8f2f2fa;
     letter-spacing: 2px;
     font-weight: 400;
     text-decoration: none;
@@ -544,6 +544,13 @@ section p{
 /*--------------------------------------------------------
 #Services Section 
 ----------------------------------------------------------*/
+.bar{
+    padding: 20px;
+    display: flex;
+    width:100px;
+    gap: 20px;
+}
+
 .services::before{
     position: absolute;
     content: '';
